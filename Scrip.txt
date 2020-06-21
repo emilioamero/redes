@@ -1,0 +1,74 @@
+--conectar 
+
+mysql -h localhost -u root -p
+
+--mostrar bases 
+
+show databases;
+--crear base 
+create database TP;
+--usuario
+CREATE USER 'userTP'@'%' IDENTIFIED BY '33309073';
+GRANT ALL PRIVILEGES ON *.* TO 'userTP'@'%';
+
+
+use TP;
+
+create table tortas (id INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, nombre VARCHAR(180));
+create table tipos (id INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, nombre VARCHAR(180));
+ 
+ --para ver 
+
+ describe tortas
+
+ --Insert
+
+INSERT INTO  tipos  (nombre) VALUES ('Selva Negra');
+INSERT INTO  tipos  (nombre) VALUES ('Hojaldrada');
+-----
+
+ INSERT INTO  tortas  (nombre) VALUES ('Marquise de chocolate ..........');
+INSERT INTO  tortas  (nombre) VALUES ('Torta Gauchito, base de brownie, dulce de leche y merengue o crema');
+INSERT INTO  tortas  (nombre) VALUES ('Otra version de torta Gauchito base de brownie, crema pastelera de chocolate y crema');
+INSERT INTO  tortas  (nombre) VALUES ('lemon pie.....dos tamaños');
+INSERT INTO  tortas  (nombre) VALUES ('Brownie');
+INSERT INTO  tortas  (nombre) VALUES ('torta de ricota');
+INSERT INTO  tortas  (nombre) VALUES ('Torta de coco y dulce de leche');
+INSERT INTO  tortas  (nombre) VALUES ('Torta de frutos secos');
+INSERT INTO  tortas  (nombre) VALUES ('Torta con base de brownie y mousse de chocolate');
+INSERT INTO  tortas  (nombre) VALUES ('Torta de chocolate con frutos rojos');
+INSERT INTO  tortas  (nombre) VALUES ('Torta de chocolate y praline');
+INSERT INTO  tortas  (nombre) VALUES ('Tortas de cumpleaños  chica / mediana y grande');
+INSERT INTO  tortas  (nombre) VALUES ('                                redonda o rectangular.');
+INSERT INTO  tortas  (nombre) VALUES ('Consultar coberturas ( pasta ballina, chococlate, merengue o granas)');
+INSERT INTO  tortas  (nombre) VALUES ('torta de dulce de leche');
+INSERT INTO  tortas  (nombre) VALUES ('Pasta frola de dulce de leche/membrillo y batata');
+INSERT INTO  tortas  (nombre) VALUES ('Tarta de banana, dulce de leche y chocolate');
+INSERT INTO  tortas  (nombre) VALUES ('Tarta de frutillas');
+INSERT INTO  tortas  (nombre) VALUES ('Tarta de duraznos');
+INSERT INTO  tortas  (nombre) VALUES ('Tarta de frutas frescas');
+INSERT INTO  tortas  (nombre) VALUES ('torta de manzana con cobertura de cramble');
+INSERT INTO  tortas  (nombre) VALUES ('Torta de manzana rustica, canela, nueces y pasas de uva');
+INSERT INTO  tortas  (nombre) VALUES ('Cramble de manzana (postre)');
+INSERT INTO  tortas  (nombre) VALUES ('Rogel');
+INSERT INTO  tortas  (nombre) VALUES ('Torta tiramisu');
+INSERT INTO  tortas  (nombre) VALUES ('Pavlova frutos rojos y crema');
+INSERT INTO  tortas  (nombre) VALUES ('Chesse cake');
+INSERT INTO  tortas  (nombre) VALUES ('Torta angel');
+INSERT INTO  tortas  (nombre) VALUES ('Torta mousse de frutillas');
+INSERT INTO  tortas  (nombre) VALUES ('Mini tortas');
+INSERT INTO  tortas  (nombre) VALUES ('Cup cakes ....especiales en cajitas');
+INSERT INTO  tortas  (nombre) VALUES ('Cup cakes salados');
+INSERT INTO  tortas  (nombre) VALUES ('Galletitas decoradas grandes con palito ');
+INSERT INTO  tortas  (nombre) VALUES ('Galletitas decoradas surtidas');
+INSERT INTO  tortas  (nombre) VALUES ('conos de pochoclos divertidos');
+INSERT INTO  tortas  (nombre) VALUES ('Budines de chocolate');
+INSERT INTO  tortas  (nombre) VALUES ('Budin de frutas secas');
+INSERT INTO  tortas  (nombre) VALUES ('Budines de citricos');
+INSERT INTO  tortas  (nombre) VALUES ('Budin de banana.');
+INSERT INTO  tortas  (nombre) VALUES ('Budin de pan...............con pasas y nueces');
+INSERT INTO  tortas  (nombre) VALUES ('Masitas secas');
+INSERT INTO  tortas  (nombre) VALUES ('Alfajores de maicena');
+INSERT INTO  tortas  (nombre) VALUES ('Cuadraditos de limon');
+INSERT INTO  tortas  (nombre) VALUES ('Pepas.');
+INSERT INTO  tortas  (nombre) VALUES ('Rogelitos.');

@@ -1,0 +1,22 @@
+
+<table>
+  <tr>
+    <td>Celda 1</td>
+    <td>Celda 2</td>
+    <td>Celda 3</td>
+  </tr>
+  <tr *ngFor="let resul of resultado">
+    <td >{{resul.id}}</td>
+    <td >{{resul.email}}</td>
+    <td >{{resul.name}}</td>
+    <td >{{resul.active}}</td>
+
+  </tr>
+</table>
+
+<style>
+  table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+  </style>
