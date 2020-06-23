@@ -8,7 +8,7 @@ const Tortas = function(tortas) {
 };
 
 Tortas.getAll = result => {
-    sql.query("SELECT * FROM tortas", (err, res) => {
+    sql.query("SELECT * FROM tortas order by nombre", (err, res) => {
       if (err) {
         console.log("error: ", err);
         result(null, err);
