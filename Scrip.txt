@@ -72,3 +72,11 @@ INSERT INTO  tortas  (nombre) VALUES ('Alfajores de maicena');
 INSERT INTO  tortas  (nombre) VALUES ('Cuadraditos de limon');
 INSERT INTO  tortas  (nombre) VALUES ('Pepas.');
 INSERT INTO  tortas  (nombre) VALUES ('Rogelitos.');
+
+
+---------
+
+agrego precio
+ALTER TABLE tortas ADD precio DECIMAL
+
+
