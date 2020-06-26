@@ -35,6 +35,7 @@ app.use(function (req, res, next) {
 });
 
  require("./app/routes/customer.routes.js")(app); 
+ require("./app/routes/customer.routes2.js")(app); 
 /*require("./app/routes/tortas.routes.js")(app);*/
 
 // set port, listen for requests
