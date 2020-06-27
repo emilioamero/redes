@@ -1,0 +1,56 @@
+/*
+SQLyog Community Edition- MySQL GUI v8.05 
+MySQL - 5.7.27-log : Database - TP
+*********************************************************************
+*/
+
+/*!40101 SET NAMES utf8 */;
+
+/*!40101 SET SQL_MODE=''*/;
+
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+
+CREATE DATABASE /*!32312 IF NOT EXISTS*/`TP` /*!40100 DEFAULT CHARACTER SET latin1 */;
+
+USE `TP`;
+
+/*Table structure for table `tipos` */
+
+DROP TABLE IF EXISTS `tipos`;
+
+CREATE TABLE `tipos` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `nombre` varchar(180) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+
+/*Data for the table `tipos` */
+
+LOCK TABLES `tipos` WRITE;
+
+insert  into `tipos`(`id`,`nombre`) values (1,'Selva Negra'),(2,'Hojaldrada');
+
+UNLOCK TABLES;
+
+/*Table structure for table `tortas` */
+
+DROP TABLE IF EXISTS `tortas`;
+
+CREATE TABLE `tortas` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `nombre` varchar(180) DEFAULT NULL,
+  `precio` decimal(10,0) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=46 DEFAULT CHARSET=latin1;
+
+/*Data for the table `tortas` */
+
+LOCK TABLES `tortas` WRITE;
+
+insert  into `tortas`(`id`,`nombre`,`precio`) values (1,'Marquise de chocolate ','836'),(2,'Torta Gauchito, base de brownie, dulce de leche y merengue o crema','1603'),(3,'Otra version de torta Gauchito base de brownie, crema pastelera de chocolate y crema','1303'),(4,'Lemon pie','2000'),(5,'Brownie','1090'),(6,'torta de ricota','493'),(7,'Torta de coco y dulce de leche','147'),(8,'Torta de frutos secos','1750'),(9,'Torta con base de brownie y mousse de chocolate','1858'),(10,'Torta de chocolate con frutos rojos','519'),(11,'Torta de chocolate y praline','1544'),(12,'Tortas de cumpleaños  chica / mediana y grande','977'),(13,'Selvanegra  redonda o rectangular.','872'),(14,'Coberturas ( pasta ballina, chococlate, merengue o granas)','98'),(15,'torta de dulce de leche','1979'),(16,'Pasta frola de dulce de leche/membrillo y batata','742'),(17,'Tarta de banana, dulce de leche y chocolate','329'),(18,'Tarta de frutillas','1533'),(19,'Tarta de duraznos','1112'),(20,'Tarta de frutas frescas','1928'),(21,'torta de manzana con cobertura de cramble','597'),(22,'Torta de manzana rustica, canela, nueces y pasas de uva','1937'),(23,'Cramble de manzana (postre)','1842'),(24,'Rogel','1035'),(25,'Torta tiramisu','1477'),(26,'Pavlova frutos rojos y crema','410'),(27,'Chesse cake','1765'),(28,'Torta angel','247'),(29,'Torta mousse de frutillas','1222'),(30,'Mini tortas','761'),(31,'Cup cakes ....especiales en cajitas','157'),(32,'Cup cakes salados','5'),(33,'Galletitas decoradas grandes con palito ','699'),(34,'Galletitas decoradas surtidas','797'),(35,'conos de pochoclos divertidos','333'),(36,'Budines de chocolate','128'),(37,'Budin de frutas secas','434'),(38,'Budines de citricos','500'),(39,'Budin de banana.','1439'),(40,'Budin de pan con pasas y nueces','1898'),(41,'Masitas secas','1431'),(42,'Alfajores de maicena','959'),(43,'Cuadraditos de limon','2500'),(44,'Pepas.','1183'),(45,'Rogelitos.','500');
+
+UNLOCK TABLES;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;

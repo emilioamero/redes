@@ -19,7 +19,7 @@ const dbConfig = require("../config/db.config.js");
   
  */
 const connection = mysql.createConnection({
-    host: "192.168.1.25",
+    host: "192.168.1.22",
     user: "root",
     password: "33309073",
     database: "redes",

@@ -9,6 +9,7 @@ import { TortasService } from '../tortas.service';
 export class TortasComponent implements OnInit {
 
   resultado: any = [];
+
   /* @HostBinding('class') classes = 'row'; */
   constructor(private tortasServicio: TortasService) { }
 
